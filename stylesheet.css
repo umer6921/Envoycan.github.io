@@ -1,0 +1,351 @@
+:root {
+  ---green-color: #2ec91c;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8705882353) !important;
+  color: white;
+}
+
+button:focus {
+  outline: 0px !important;
+  box-shadow: none !important;
+}
+
+.container-fluid {
+  width: 95%;
+}
+
+.btn-outline-green {
+  border: 1px solid white;
+  border-radius: 8px;
+  color: white;
+}
+
+#navbar-search::placeholder {
+  color: rgba(255, 255, 255, 0.815);
+}
+
+.btn-outline-green:hover {
+  background-color: #2ec91c;
+  color: white;
+}
+
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#navbar-search {
+  background: none;
+  border: 0;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+#navbar-search:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px rgba(241, 242, 243, 0.315);
+  color: white;
+  border-radius: 30px;
+}
+
+.fa-magnifying-glass {
+  color: white;
+}
+
+.fa-magnifying-glass:hover {
+  cursor: pointer;
+}
+
+.profile .profile-img {
+  width: 45%;
+}
+
+.btn-green {
+  background-color: #2ec91c;
+  color: white;
+}
+
+.edit-profile-btn {
+  width: 80%;
+  border-radius: 7px;
+}
+
+.settings {
+  list-style: none;
+  padding: 0;
+}
+
+.settings-heading {
+  padding: 12px;
+  background: #3d3d3e;
+}
+
+.settings li {
+  display: block;
+}
+
+.btn-settings {
+  text-decoration: none;
+  color: white;
+  border: none;
+}
+
+.btn-settings:hover {
+  color: #2ec91c;
+}
+ /* Change the background color of the active switch */
+input[type=checkbox]:checked {
+  background-color: #2ec91c;
+  border: none;
+}
+
+.active {
+  left: 0;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .item a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+}
+
+.menu .item a:hover {
+  background: var(---green-color);
+  transition: 0.3s ease;
+}
+
+.menu .item .dropdown {
+  position: absolute;
+  right: 0;
+  transition: 0.3s ease;
+}
+
+.menu .item .sub-menu {
+  background: #262627;
+  display: none;
+}
+
+.menu .item .sub-menu a {
+  padding-left: 32px;
+}
+
+.menu-btn {
+  position: absolute;
+  color: rgb(0, 0, 0);
+  font-size: 35px;
+  margin: 25px;
+}
+
+.rotate {
+  transform: rotate(90deg);
+}
+
+.chat-section {
+  background-color: #3d3d3e;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.inbox-search {
+  background-color: rgba(0, 0, 0, 0.4509803922);
+  border-radius: 13px;
+  padding: 8px;
+  caret-color: var(---green-color);
+}
+
+.inbox-search-input {
+  border-radius: 0px 13px 13px 0px;
+  background-color: transparent;
+  border: 0;
+}
+.inbox-search-input:focus {
+  background-color: transparent;
+  outline: 0;
+  box-shadow: none;
+  color: white;
+}
+
+.inbox-search-btn {
+  border-radius: 13px 0px 0 13px;
+  border: 0;
+}
+.inbox-search-btn:hover {
+  background: #2ec91c;
+}
+
+.inbox-msg {
+  cursor: pointer;
+}
+
+.badge {
+  background-color: var(---green-color);
+}
+
+
+.gg-more-vertical-alt {
+  transform: scale(var(--ggs, 1));
+  color: white;
+}
+
+.gg-more-vertical-alt,
+.gg-more-vertical-alt::after,
+.gg-more-vertical-alt::before {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: currentColor;
+  border-radius: 100%;
+}
+
+.gg-more-vertical-alt::after,
+.gg-more-vertical-alt::before {
+  content: "";
+  position: absolute;
+}
+
+.gg-more-vertical-alt::after {
+  left: 0;
+  top: 6px;
+}
+
+.gg-more-vertical-alt::before {
+  top: -6px;
+  right: 0;
+}
+
+.conversation {
+  background-color: rgba(0, 0, 0, 0.4509803922);
+}
+
+.card-header {
+  padding: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  border-bottom: 0px;
+}
+
+.msg-container {
+  height: 44em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.card {
+  color: rgba(0, 0, 0, 0.904);
+  border-radius: 12px 12px 12px 0px;
+}
+.card img {
+  width: 16em;
+}
+.card .card-body {
+  padding: 8px;
+}
+.card .card-header-reply {
+  background-color: rgba(204, 204, 204, 0.534);
+  border-left: 4px solid var(---green-color);
+}
+.card .card-header-reply span {
+  color: var(---green-color);
+}
+
+.sender {
+  display: flex;
+}
+
+.receiver {
+  display: flex;
+  justify-content: end;
+}
+
+.receiver .card {
+  background-color: var(---green-color);
+  color: white;
+  border-radius: 12px 12px 0px 12px;
+}
+
+.fa-paper-plane {
+  color: white;
+  background-color: var(---green-color);
+  padding: 8px;
+  border-radius: 30px;
+  cursor: pointer;
+  float: right;
+  position: absolute;
+  top: 12px;
+  right: 14px;
+}
+
+.send-msg {
+  background-color: #3d3d3e;
+  border-radius: 13px;
+  padding: 14px;
+  position: relative;
+}
+.send-msg input {
+  background: transparent;
+  border: 0;
+  width: 90%;
+  color: white;
+}
+
+.btn-chat-setting {
+  border: 0;
+}
+
+.send-msg-input:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+.send-msg-input::placeholder {
+  color: white;
+}
+
+.offcanvas {
+  background-color: rgba(0, 0, 0, 0.4509803922);
+  overflow-y: auto;
+}
+
+@media (max-width: 992px) {
+  .btn-lg-sidebar {
+    display: block !important;
+  }
+  .btn-close {
+    visibility: visible;
+  }
+  .offcanvas.offcanvas-start {
+    width: auto;
+    padding: 20px;
+  }
+}
+
+/* custom Scroll bar  */
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(---green-color);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
